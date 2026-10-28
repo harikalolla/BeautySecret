@@ -1,0 +1,605 @@
+.brand-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #563546;
+}
+
+.brand-name span,
+.site-footer h3 span {
+  color: #d58a9c;
+}
+
+.navbar .nav-link {
+  color: #403039;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #c56f89;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #c56f89;
+  color: white;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section {
+  background: #fcf2f3;
+  padding: 65px 0;
+  overflow: hidden;
+}
+
+.hero-eyebrow,
+.section-eyebrow {
+  color: #b46c83;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 1.08;
+  margin: 20px 0;
+  color: #563546;
+}
+
+.hero-content h1 span {
+  color: #c56f89;
+  font-style: italic;
+}
+
+.hero-content > p {
+  max-width: 440px;
+  color: #75646d;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  background: #563546;
+  color: white;
+  border: 1px solid #563546;
+}
+
+.primary-btn:hover {
+  background: #754a60;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #563546;
+  color: #563546;
+}
+
+.secondary-btn:hover {
+  background: #563546;
+  color: white;
+}
+
+.hero-note {
+  color: #826977;
+  font-size: 0.9rem;
+}
+
+.hero-note i {
+  color: #c56f89;
+  margin-right: 8px;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  padding: 15px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 48% 48% 8px 8px;
+}
+
+.hero-floating-card {
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px #5635461a;
+}
+
+.hero-floating-card > i {
+  font-size: 1.6rem;
+  color: #c56f89;
+}
+
+.hero-floating-card strong,
+.hero-floating-card small {
+  display: block;
+}
+
+.hero-floating-card small {
+  color: #8a7b83;
+  margin-top: 3px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #563546;
+  margin-top: 10px;
+}
+
+.category-card {
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff0 0%, #fff8 100%);
+}
+
+.category-card > div {
+  position: relative;
+  z-index: 1;
+}
+
+.skincare-category {
+  background-color: #f2e6df;
+  background-image: url("https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=900");
+}
+
+.makeup-category {
+  background-color: #f8e1e7;
+  background-image: url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900");
+}
+
+.category-card > div > span:first-child {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #745263;
+}
+
+.category-card h3 {
+  font-size: 2rem;
+  color: #563546;
+  margin: 12px 0;
+}
+
+.category-link {
+  font-weight: 600;
+  color: #563546;
+}
+
+.featured-section {
+  background: #fffafb;
+}
+
+.view-all-link {
+  color: #a65d77;
+  font-weight: 600;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #f1e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px #56354612;
+}
+
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #f8f2f3;
+}
+
+.product-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.04);
+}
+
+.product-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: white;
+  color: #795365;
+  border-radius: 3px;
+  padding: 5px 9px;
+  font-size: 0.7rem;
+}
+
+.product-rating {
+  color: #bd8b43;
+  font-size: 0.8rem;
+}
+
+.product-name {
+  color: #563546;
+  font-weight: 600;
+  display: block;
+  min-height: 42px;
+}
+
+.product-description {
+  color: #877780;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  min-height: 38px;
+}
+
+.product-price {
+  color: #563546;
+}
+
+.add-cart-btn {
+  background: white;
+  color: #563546;
+  border: 1px solid #d9bac6;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.add-cart-btn:hover {
+  background: #563546;
+  color: white;
+}
+
+.selfcare-banner {
+  background: #fcf2f3;
+  border-radius: 8px;
+  padding: 55px 20px;
+}
+
+.selfcare-banner h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  color: #563546;
+  margin: 18px 0;
+}
+
+.selfcare-banner p {
+  max-width: 560px;
+  margin: 0 auto 25px;
+  color: #806e78;
+  line-height: 1.8;
+}
+
+.site-footer {
+  background: #563546;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.site-footer h3 {
+  font-size: 1.8rem;
+}
+
+.site-footer p {
+  color: #eadde4;
+  margin: 10px 0;
+}
+
+.site-footer small {
+  color: #d8c5cf;
+}
+
+.page-container {
+  min-height: 60vh;
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-floating-card {
+    left: 5px;
+    bottom: 25px;
+    padding: 12px;
+  }
+
+  .category-card {
+    min-height: 200px;
+    padding: 22px;
+  }
+
+  .category-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .product-image {
+    height: 170px;
+  }
+
+  .product-card .p-3 {
+    padding: 10px !important;
+  }
+
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  .product-description {
+    font-size: 0.75rem;
+  }
+
+  .add-cart-btn {
+    padding: 6px;
+  }
+}
+
+/* BEAUTY SECRET BLOG */
+
+.beauty-blog {
+  color: #403039;
+  background: #fffdfd;
+}
+
+.blog-hero {
+  padding: 100px 0 110px;
+  background: linear-gradient(120deg, #fff0f5, #fce6ed 55%, #f9e9df);
+}
+
+.blog-eyebrow {
+  display: inline-block;
+  color: #ad456c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.blog-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.08;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.blog-hero h1 span {
+  color: #bb527c;
+  font-style: italic;
+}
+
+.blog-hero p {
+  max-width: 520px;
+  color: #796873;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.blog-hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 24px;
+  border-radius: 4px;
+  background: #b74470;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+.blog-hero-button:hover {
+  background: #913353;
+  color: white;
+}
+
+.blog-intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 75px;
+  padding-bottom: 35px;
+}
+
+.blog-intro h2,
+.blog-newsletter h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 600;
+}
+
+.blog-intro > p {
+  max-width: 370px;
+  color: #82717a;
+  line-height: 1.8;
+}
+
+.blog-content {
+  padding-bottom: 85px;
+}
+
+.blog-filter-label {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eadde3;
+  padding: 18px 0;
+  margin-bottom: 28px;
+  color: #a45a79;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.blog-card {
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f1e5eb;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(95, 46, 68, 0.1);
+}
+
+.blog-image-wrapper {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  background: #f8edf1;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-image {
+  transform: scale(1.05);
+}
+
+.blog-category {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  padding: 8px 12px;
+  background: #fff;
+  color: #a53c66;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.blog-card-body {
+  padding: 23px;
+}
+
+.blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 15px;
+  color: #99858f;
+  font-size: 11px;
+}
+
+.blog-card-body h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 1.35;
+  margin-bottom: 13px;
+}
+
+.blog-card-body > p {
+  min-height: 76px;
+  color: #80717a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.blog-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  color: #b74470;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.blog-read-more:hover {
+  color: #84314f;
+}
+
+.blog-newsletter {
+  padding: 75px 20px;
+  text-align: center;
+  background: #fbecf1;
+}
+
+.blog-newsletter p {
+  max-width: 550px;
+  margin: 18px auto 28px;
+  color: #796873;
+  line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+  .blog-hero {
+    padding: 70px 0;
+  }
+
+  .blog-intro {
+    display: block;
+    padding-top: 50px;
+  }
+
+  .blog-intro > p {
+    margin-top: 18px;
+  }
+
+  .blog-image-wrapper {
+    height: 230px;
+  }
+
+  .blog-card-body > p {
+    min-height: auto;
+  }
+}
